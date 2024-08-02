@@ -1,2 +1,2 @@
 # ConnectFourGame
-Simple Connect Four Game with JAVA
+Simple Connect Four Game with Java.
