@@ -144,7 +144,6 @@ class ConnectFourGUI extends JFrame {
     }
 
     private boolean checkWin(char disk) {
-        // Check horizontal
         for (int i = 0; i < ROWS; i++) {
             for (int j = 0; j <= COLUMNS - 4; j++) {
                 if (board[i][j] == disk && board[i][j + 1] == disk && board[i][j + 2] == disk && board[i][j + 3] == disk) {
@@ -154,7 +153,6 @@ class ConnectFourGUI extends JFrame {
             }
         }
 
-        // Check vertical
         for (int i = 0; i <= ROWS - 4; i++) {
             for (int j = 0; j < COLUMNS; j++) {
                 if (board[i][j] == disk && board[i + 1][j] == disk && board[i + 2][j] == disk && board[i + 3][j] == disk) {
@@ -164,7 +162,6 @@ class ConnectFourGUI extends JFrame {
             }
         }
 
-        // Check diagonal (bottom-left to top-right)
         for (int i = 3; i < ROWS; i++) {
             for (int j = 0; j <= COLUMNS - 4; j++) {
                 if (board[i][j] == disk && board[i - 1][j + 1] == disk && board[i - 2][j + 2] == disk && board[i - 3][j + 3] == disk) {
