@@ -171,7 +171,6 @@ class ConnectFourGUI extends JFrame {
             }
         }
 
-        // Check diagonal (top-left to bottom-right)
         for (int i = 0; i <= ROWS - 4; i++) {
             for (int j = 0; j <= COLUMNS - 4; j++) {
                 if (board[i][j] == disk && board[i + 1][j + 1] == disk && board[i + 2][j + 2] == disk && board[i + 3][j + 3] == disk) {
@@ -214,7 +213,7 @@ class ConnectFourGUI extends JFrame {
 
         public Disk(Color color) {
             this.color = color;
-            setPreferredSize(new Dimension(60, 60)); // Larger disks
+            setPreferredSize(new Dimension(60, 60)); 
             setOpaque(false);
         }
 
