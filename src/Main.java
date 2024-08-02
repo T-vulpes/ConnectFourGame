@@ -210,7 +210,6 @@ class ConnectFourGUI extends JFrame {
 
     private void highlightWinningDisks() {
         updateBoard();
-        // Blinking functionality if needed
     }
 
     private class Disk extends JPanel {
